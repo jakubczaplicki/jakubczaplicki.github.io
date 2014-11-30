@@ -1,0 +1,511 @@
+`<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>When and how to make and publish app in 60 min</title>
+
+    <meta name="description" content="CMAG 2014.07.15" />
+    <meta name="author" content="Jakub Czaplicki" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <!--
+
+        Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
+        presentation to work.
+
+        This style below contains styles only for demo presentation. Browse it to see how impress.js
+        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
+        you to use them directly in your presentation.
+
+        Be creative, build your own. We don't really want all impress.js presentations to look the same,
+        do we?
+
+        When creating your own presentation get rid of this file. Start from scratch, it's fun!
+
+    -->
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/table.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="prettify/prettify.css" />
+    <script src="prettify/prettify.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<!--
+
+    Now that's the core element used by impress.js.
+
+    That's the wrapper for your presentation steps. In this element all the impress.js magic happens.
+    It doesn't have to be a `<div>`. Only `id` is important here as that's how the script find it.
+
+    You probably won't need it now, but there are some configuration options that can be set on this element.
+
+    To change the duration of the transition between slides use `data-transition-duration="2000"` giving it
+    a number of ms. It defaults to 1000 (1s).
+
+    You can also control the perspective with `data-perspective="500"` giving it a number of pixels.
+    It defaults to 1000. You can set it to 0 if you don't want any 3D effects.
+    If you are willing to change this value make sure you understand how CSS perspective works:
+    https://developer.mozilla.org/en/CSS/perspective
+
+    But as I said, you won't need it for now, so don't worry - there are some simple but interesting things
+    right around the corner of this tag ;)
+
+-->
+<div id="impress">
+
+    <div id="first" class="step slide" data-x="-3000" data-y="-1500">
+        <q>When is a good time to make an app ? </br>
+        How did I do this in such a short time ? </br>
+        How much did I learn ? </br>
+        How much did I earn ? </q></br></br></br></br>
+        <font size=5px">Cambridge Mobile App Group</br>2014.07.15</font>
+        <img src="img/wip42.png" style="position:fixed; left:600px; bottom:50px; border:none;">
+    </div>
+
+    <div class="step slide" data-x="-2000" data-y="-1500" >
+        <q style="font-size:34px"><strong>Story background</strong></br>
+        On 25<sup>th</sup> May during a pilgrimage 2500 polish physicians
+        have signed a six-point "Declaration of Faith" <!-- calling for the recognition
+        of physicians' rights to perform their duties in line with 	their religious beliefs. -->
+        </br></br>
+        #6. "I recognise the primacy of God's law </br>over human laws"
+        <!--Conscience clause-->
+        <!-- Six-point "Declaration of Faith Doctors" - as a votive offering for the canonization of John Paul II,
+        the idea of Wanda Poltava, a physician and lifelong friend of Karol Wojtyla, the future Pope. -->
+        <!-- Deklaracja spowodowala debate medialna o roli, znaczeniu i granicach stosowania przez lekarzy klauzuli sumienia. -->
+        <!-- 90. Pielgrzymki Sluzby Zdrowia na Jasnej Gorze jako dar wotywny za kanonizacje Jana Pawla II[2] -->
+        </q>
+        <img src="img/monk_abbey3.png" style="position:fixed; right:80px; bottom:50px; height:150px; border:none;">
+        <img src="img/surgeon.gif" style="position:fixed; right:45px; bottom:60px; height:80px; border:none;">
+    </div>
+
+    <div class="step slide" data-x="-1000" data-y="-1500" >
+        <q style="margin-top: -20px;"><center><img src="img/gazeta.png" height=650></center>
+        <img src="img/latestnews.png" style="position:fixed; right:30px; bottom:10px; height:100px; border:none;">
+        </q>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500" >
+        <q style="margin-top: -20px;"><center><img src="img/lista.png" height=650></center>
+        <span style="position:fixed; right:220px; bottom:485px; width:500px; height:100px; border:none; background:white; font-size:30px">
+        The list of names is available online.</span>
+        <img src="img/bloodynurse.gif" style="position:fixed; right:30px; bottom:10px; height:100px; border:none;">
+        </q>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500" >
+        <q style="margin-top: 30px;"><center><img src="img/lekarze_statystyka.png" height=380></center></q>
+        <img src="img/szczykafka.png" style="position:fixed; right:30px; bottom:10px; height:400px; border:none; background:white;">
+        <center><span style="font-size:40px; position:fixed; right:200px; border:none; height:200px; bottom:20px; background:white;">So far 3760 physicians signed. <br/><br/> 3760 / 358434  &#8776; <b><font color="#00aaffff">1%</font></b></span></center>
+    </div>
+
+    
+    <div class="step slide" data-x="2000" data-y="-1500">
+        <q><center><img src="img/daily_mail_logo1.jpg" width=600 style="position:fixed; left:150px; bottom:280px; border:none;"></center></q>
+    </div>
+
+    <div id="ing" class="step" data-x="2000" data-y="-500">
+        <p> <strong>28 May at ~15:00</strong> <b class="rotating">"Should I do it ?"</b> </br></br>
+            <b class="rotating5deg"><font color="red" size=4>28 May at 14:59: "Do it !"</font></b>
+            <b class="rotating10deg"><font color="burgundy" size=4>28 May at 15:09: "Sure!"</font></b>
+            <img src="img/thug.gif" style="position:fixed; left:300px; top:170px; height:320px; border:none;">
+        </p>
+    </div>
+
+    <div id="pies" class="step" data-x="1000" data-y="-500">
+        <p>
+            <img src="img/2013-12-12-TWINKLE.gif" style="position:fixed; left:150px; bottom:-160px; border:none;">
+        </p>
+    </div>
+
+
+    <div class="step" data-x="2000" data-y="500">
+        <q> <strong>28 May at 15:21</strong> <br/> <img src="img/step1.jpg"> </q>
+    </div>
+
+    <div class="step" data-x="2000" data-y="700" data-z="-200" data-rotate-x="90">
+        <q> <img src="img/workinonit.png"> </q>
+    </div>
+
+    <div class="step" data-x="2000" data-y="500">
+        <q> <strong>28 May at 15:21</strong> <br/> <img src="img/step1.jpg"> </q>
+    </div>
+
+    <div class="step" data-x="3500" data-y="500">
+        <q> <strong>28 May at 15:44</strong> <br/> <img src="img/step2a.jpg" height=600>  <img src="img/step2b.jpg" height=600> </q>
+    </div>
+
+    <div class="step" data-x="3400" data-y="500" data-z="-00" data-rotate-x="90" style="line-height:1.5; font-size: 20px; width: 900px; background-color:white;">
+        <q>
+        <strong>Code</strong> </br>
+        <code class="prettyprint lang-java linenums">
+       List<String> nameList = new ArrayList<String>(); </br>
+       nameList.add("First line"); </br>
+       nameList.add("Second line"); </br>
+       </br>
+       ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, R.layout.name_list, nameList); </br>
+       ListView listView = (ListView) findViewById(R.id.listViewNames); </br>
+       listView.setAdapter(dataAdapter); </br>
+       listView.setTextFilterEnabled(true); </br>
+       </br>
+       EditText myFilter = (EditText) findViewById(R.id.myFilter); </br>
+       myFilter.addTextChangedListener(new TextWatcher() { </br>
+       <q style="padding-left:2em">public void afterTextChanged(Editable s) {}</q> </br>
+       <q style="padding-left:2em">public void beforeTextChanged(CharSequence s, int start, int count, int after) {}</q> </br>
+       <q style="padding-left:2em">public void onTextChanged(CharSequence s, int start, int before, int count) { </q> </br>
+       <q style="padding-left:4em">dataAdapter.getFilter().filter( s.toString() );</q> </br>
+       <q style="padding-left:2em">} });</q></font>
+     </code>
+     <script>prettyPrint();</script>
+     </q>
+    </div>
+
+    <div class="step" data-x="3500" data-y="500">
+        <q> <strong>28 May at 15:44</strong> <br/> <img src="img/step2a.jpg" height=600>  <img src="img/step2b.jpg" height=600> </q>
+    </div>
+
+    <div class="step" data-x="5000" data-y="500">
+        <q> <strong>28 May at 15:45</strong> <br/> "Almost there!" </br> <img src="img/almostthere.png" width="450"></q>
+    </div>
+
+    <div class="step" data-x="6500" data-y="500">
+        <q> <strong>28 May at 16:05</strong> <br/> Working on the app title.. </br>
+        <font size="6">"Sprawd&#378; lekarza"=="Check your doctor"</font></br>
+        <font size="5">The simpler, the better.</font>
+        <img src="img/doctor_clipboard.gif" style="position:fixed; right:0px; bottom:0px; height:150px; border:none;">
+        </q>
+    </div>
+
+    <div class="step" data-x="6500" data-y="1500">
+        <q> <strong>28 May at 16:18</strong>  <br/> <img src="img/saveandpublish.png"> <br/> "Your application has been published. It can take <strong>several hours</strong> until it is available throughout Google Play."</q>
+    </div>
+
+    <div id="online" class="step" data-x="8000" data-y="1500">
+        <q>Suddenly.. </br>
+        <b class="rotating6deg"> </br> "500. That's an error. There was an error. </br>Please try again later. That's all we know."</b> </br>
+        <b class="rotating10deg"></br>Google:</br>"On 28 May 2014, we made some corrections .."</b></q>
+        <img src="img/castor.png" style="position:fixed; right:0px; top:0px; height:200px; border:none;">
+    </div>
+
+    <div class="step" data-x="9500" data-y="1500">
+        <q> <strong>28 May at 18:58</strong> <br/>  <span class="its"><font color="brown"><b>ONLINE!</b></font></span> <br/>
+        <img src="img/dancingsnipertf2ibygas131.gif" style="position:fixed; left:400px; top:40px; height:300px; border:none;">
+    </div>
+
+    <div id="timesummary" class="step" data-x="11000" data-y="1500">
+        <q> <ul><li>Total dev time : ~45 min <font size=4>15:15-16:00</font> </li>
+                <li>Total desc time : ~15 min <font size=4>16:00-16:18</font> </li>
+                <li>Waiting for google: forever <sup>160 min</sup> <font size=4>16:18-18:58</font> </li>
+            </ul>
+            <img src="img/alexander_de_large_clockwor.gif" style="position:fixed; right:50px; top:80px; height:150px; border:none;">
+        </q>
+    </div>
+
+    <!-- viral -->
+
+    <div class="step" data-x="1000" data-y="-10000" data-rotate-x="-90" data-rotate-y="90">
+        <q> <strong>28 May at 18:59</strong> </br> First facebook post. </br> <img src="img/radek.png"></q>
+    </div>
+
+    <div class="step" data-x="3000" data-y="-10000" data-rotate-x="-90" data-rotate-y="90">
+        <q> <strong>28 May at 21:17</strong> </br> First article mentioning the app. </br> <img src="img/pierwszyartykul.png" width=300></q>
+    </div>
+
+    <div id="radiozet" class="step" data-x="5000" data-y="-10000" data-rotate-x="-90" data-rotate-y="90">
+        <q> <strong>29 May at 10:41</strong> </br> 2nd most popular radio station in PL: </br> <img src="img/radiozet_twitter.png"</q>
+    </div>
+
+    <div id="pub" class="step" data-x="7000" data-y="-10000" data-rotate-x="-90" data-rotate-y="90">
+        <q style="font-size:30px"> <strong>Other publications mentioning the app:</strong></br>
+        <ul>
+        <li><b>28.05 21:16</b>: http://wiadomosci.gazeta.pl/wiadomosci/1,114883,16053085,Chcesz_wiedziec__czy_twoj_lekarz_podpisal_deklaracje.html</li>
+        <li><b>29.05 10:03</b>: http://di.com.pl/news/49986,0,Sprawdz_czy_Twoj_lekarz_podpisal_deklaracje_wiary.html</li>
+        <li><b>29.05 14:20</b>: http://www.komputerswiat.pl/nowosci/aplikacje/2014/22/boisz-sie-lekarza-z-sumieniem---ta-aplikacja-pomoze-go-uniknac.aspx</li>
+        <li><b>29.05 15:20</b>: http://www.fronda.pl/forum/boisz-sie-lekarza-z-sumieniem,56775.html</li>
+        <li><b>29.05 19:03</b>: http://softonet.pl/publikacje/aktualnosci/Sklep.Google.Play.i.aplikacja.Sprawdz.lekarza.To.niezupelnie.to.co.myslisz,100</li>
+        <li><b>29.05</b>: http://wiadomosci.radiozet.pl/Polska/Wiadomosci/Sprawdz-czy-twoj-lekarz-podpisal-deklaracje-wiary</li>
+        <li><b>29.05</b>: http://ezamosc.pl/index.php?option=com_content&task=view&id=8836&Itemid=44</li>
+        <li><b>30.05 17:50</b>: http://biznes.pl/wiadomosci/najnowsze/aplikacja-pokaze-czy-lekarz-ma-sumienie,5640075,news-detal.html</li>
+        <li><b>30.05</b>: http://www.benchmark.pl/aktualnosci/sprawdz-lekarza-aplikacja-deklaracja-wiary.html</li>
+        <li><b>30.05</b> : http://www.obserwatorkonstytucyjny.pl/debaty/jak-uniknac-lekarza-z-sumieniem/</li>
+        <li>Windows app clone: http://www.windowsphone.com/en-us/store/app/sprawd%C5%BA-lekarza/b65af851-33a6-4faa-bc0f-3974c8a83405</li>
+        </ul></q>
+    </div>
+
+    <!-- now some stats -->
+
+    <div id="stats" class="step" data-x="-3000" data-y="-15000" data-rotate-x="-90" data-rotate-y="90">
+        <q>
+            <center>
+            <img src="img/play_total.png"> </br>
+            <img src="img/play_currinst.png"> </br>
+            <img src="img/play_rating.png"> </br>
+            <!--<img src="img/play_ratings.png"> </br>-->
+            <center>
+        </q>
+    </div>
+
+    <div id="earlydays" class="step" data-x="-500" data-y="-15000" data-rotate-x="-90" data-rotate-y="90" data-scale="1">
+        <q>
+        <center>
+        <table cellspacing='0'>
+        <thead>
+        <tr><td>after</td><td>minutes</td><td>downloads</td><td>downloads per minute</td></tr>
+        </thead>
+        <tbody>
+        <tr><td>1 day</td><td>1440</td><td>1428</td><td>0.99</td></tr>
+        <tr class="even"><td>2 days</td><td>2880</td><td>2983</td><td>1.04</td></tr>
+        <tr><td>3 days</td><td>4320</td><td>3705</td><td>0.86</td></tr>
+        </tbody>
+        </table>
+        </center>
+        </q>
+    </div>
+
+    <div id="downloadsummary" class="step" data-x="1500" data-y="-15000" data-rotate-x="-90" data-rotate-y="90">
+        <q>
+            <strong>Download summary:</strong>
+            <ul>
+            <li>Current installs by user: 3069 </li>
+            <li>Total installs by user: 6207 </li>
+            <li># of ratings 209 </li>
+            <li>Average rating 4.53 </li>
+            </ul>
+        </q>
+    </div>
+
+    <!-- analytics -->
+
+    <div id="analytics" class="step" data-x="-3000" data-y="-19000" data-rotate-x="-90" data-rotate-y="90">
+        <q>
+            <center>
+            <table style="margin-left: -100px;">
+            <tr><td><img src="img/anal_flurry1.png" width=500></td><td><img src="img/anal_mixpanel1.png" width=500></td></tr>
+            <tr><td><img src="img/anal_flurry2.png" width=500></td><td><img src="img/anal_mixpanel2.png" width=500></td></tr>
+            </table>
+            </center>
+        </q>
+    </div>
+
+    <div id="summarydata" class="step" data-x="3000" data-y="-19000" data-rotate-x="-90" data-rotate-y="90">
+        <q>
+            <strong>Data summary :</strong> </br>
+            <ul>
+            <li>Most popular doctor spec: </br>
+            <i style="padding-left:4em">family medicine, paediatric, gynaecology</i></li>
+            <li>65% users used the app once</li>
+            <li>22% users used the app twice</li>
+            <!-- <li style="padding-left:4em">2.4 sessions / month</li> -->
+            <li>40 secs - median time spent using the app</li>
+            <li> 30% spends 1-3 mins</li>
+            </ul>
+         </q>
+    </div>
+
+    <div id="admob" class="step" data-x="-3000" data-y="-30000" data-rotate-x="-90" data-rotate-y="90">
+        <q>
+           <b style="position:fixed; left:0px; top:10px; border:none; margin-top: -120px;">Estimated earnings: guess !</b></br>
+           <img src="img/admob.png" style="position:fixed; left:10px; top:100px; margin-top: -120px;" width=750>
+           <img src="img/admob_logo_v2.png" style="position:fixed; left:50px; top:30px; border:none;">
+           <img src="img/duckfacepre.png" style="position:fixed; left:240px; top:180px; height:150px; border:none;">
+        </q>
+   </div>
+
+
+    <div id="admobgoogle" class="step slide" data-x="3000" data-y="-30000" data-rotate-x="-90"
+data-rotate-y="90">
+        <q style="margin-top: 0px;">
+           <font size="5px"><b>Email form Google.. </b></br>
+           <font size="6px">I'm a Mobile Apps Consultant at Google working with premium developers. </br></br>
+
+        My <b style="color:blue">business development team</b> came across your app and AdMob account and <b style="color:blue">flagged you
+        as a high potential</b> which I why I would like to help you grow your app
+        business by offering you the possibility to participate in a collaboration project with myself.
+</font>
+       </q>
+   </div>
+
+   <div id="theend" class="step" data-x="-6000" data-y="-60000" data-rotate-x="-90" data-rotate-y="90">
+        <q>
+           <font size="15px"><b>Thank you !</b></font></br>
+           <ul>
+           <li><font size="7px">Credits :</font></li>
+           <li><font size="6px">https://github.com/bartaz/impress.js/</font></li>
+           <li><font size="6px">https://code.google.com/p/google-code-prettify/</font></li>
+           <li><font size="6px">http://www.pixeljoint.com/</font></li>
+           </ul>
+            <img src="img/tigerkitty.png" style="position:fixed; right:50px; top:0px; height:200px; border:none;">
+
+        </q>
+   </div>
+
+   <div id="jc" class="step" data-x="-6000" data-y="-800">
+   <q>
+     <img src="img/linkedin.png" style="position:fixed; left:0px; bottom:150px; border:none;"><font size="8px">uk.linkedin.com/in/jakubczaplicki/</font>
+   </q>
+   </div>
+
+    <!-- coop http://przeswietl.pl/page/lekarze/ --!>
+    <!-- data from other services -->
+
+    <!--
+
+        So to make a summary of all the possible attributes used to position presentation steps, we have:
+
+        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+            the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+            are exactly the same;
+        * `data-scale` - defines the scale of step element; default value is 1
+
+        These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+
+    -->
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<!--
+
+    Hint is not related to impress.js in any way.
+
+    But it can show you how to use impress.js features in creative way.
+
+    When the presentation step is shown (selected) its element gets the class of "active" and the body element
+    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+
+    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+    the first step of presentation is visible for a couple of seconds.
+
+    ...
+
+    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+    It's just a quick and dirty workaround to get different hint text for touch devices.
+    In a real world it should be at least placed in separate JS file ... and the touch content should be
+    probably just hidden somewhere in HTML - not hard-coded in the script.
+
+    Just sayin' ;)
+
+-->
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<!--
+
+    Last, but not least.
+
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+
+    In here I just include full source of the script to make it more readable.
+
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+
+-->
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+
+    The `impress()` function also gives you access to the API that controls the presentation.
+
+    Just store the result of the call:
+
+        var api = impress();
+
+    and you will get three functions you can call:
+
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+
+    For some example uses of this API check the last part of the source of impress.js where the API
+    is used in event handlers.
+
+-->
+
+</body>
+</html>
+
+<!--
+
+    Now you know more or less everything you need to build your first impress.js presentation, but before
+    you start...
+
+    Oh, you've already cloned the code from GitHub?
+
+    You have it open in text editor?
+
+    Stop right there!
+
+    That's not how you create awesome presentations. This is only a code. Implementation of the idea that
+    first needs to grow in your mind.
+
+    So if you want to build great presentation take a pencil and piece of paper. And turn off the computer.
+
+    Sketch, draw and write. Brainstorm your ideas on a paper. Try to build a mind-map of what you'd like
+    to present. It will get you closer and closer to the layout you'll build later with impress.js.
+
+    Get back to the code only when you have your presentation ready on a paper. It doesn't make sense to do
+    it earlier, because you'll only waste your time fighting with positioning of useless points.
+
+    If you think I'm crazy, please put your hands on a book called "Presentation Zen". It's all about
+    creating awesome and engaging presentations.
+
+    Think about it. 'Cause impress.js may not help you, if you have nothing interesting to say.
+
+-->
+
+<!--
+
+    Are you still reading this?
+
+    For real?
+
+    I'm impressed! Feel free to let me know that you got that far (I'm @bartaz on Twitter), 'cause I'd like
+    to congratulate you personally :)
+
+    But you don't have to do it now. Take my advice and take some time off. Make yourself a cup of coffee, tea,
+    or anything you like to drink. And raise a glass for me ;)
+
+    Cheers!
+
+-->
+
